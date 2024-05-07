@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Password Generator</title>
+  </head>
+  <body>
+    <div class="app"> 
+      <h2>Password Generator</h2>
+      <div class="card">
+        <div class="password-container">
+          <span>Password word goes here</span>
+          <button type="button" id="btn">Copy Password</button>
+        </div>
+        <br>
+        <div class="filters">
+          <div>
+            <input type="range" name="password-length" id="p-length" min="8" max="40"> 
+            <span></span>
+          </div>
+          <div>
+            <input type="checkbox" name="numbers" id="numbers"> <span>Number</span>
+          </div>
+          <div>
+            <input type="checkbox" name="symbols" id="symbols"> <span>Symbols</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
